@@ -120,3 +120,23 @@ const account3 = new Account('James Phillip', 3000)
 console.log(account1.addDeposit(3000));
 console.log(account2.removeWithdraw(3000));
 console.log(account3.getBalance(2000));
+
+class BankAccount {
+	constructor(firstname, balance){
+		this.firstname = firstname
+		this.balance = balance
+	}
+
+	addDeposit(deposit){
+		return this.balance += deposit
+			
+		}
+	removeWithdraw(withdraw){
+		return this.balance -= withdraw
+	}
+	getBalance(){
+		return this.balance
+	}
+
+
+}
