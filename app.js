@@ -121,6 +121,8 @@ console.log(account1.addDeposit(3000));
 console.log(account2.removeWithdraw(3000));
 console.log(account3.getBalance(2000));
 
+
+
 class BankAccount {
 	constructor(firstname, balance){
 		this.firstname = firstname
@@ -138,5 +140,9 @@ class BankAccount {
 		return this.balance
 	}
 
-
 }
+const bankaccount = new BankAccount('Jenny Williams', 2000)
+const bankaccount1 = new BankAccount('Henry Person', 4000)
+
+console.log(bankaccount.addDeposit(3000));
+console.log(bankaccount1.removeWithdraw(1000));
